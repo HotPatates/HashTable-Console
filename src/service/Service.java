@@ -73,21 +73,21 @@ public class Service {
                 Node N=Tab[i].getNext();
                 String S2="╔═════╗";
                 String S="║     ║";
-                String S1=i+1<size?"╠═════╣":"╚═════╝";
+                String S1="╚═════╝";
                 while (N!=null){
 
                     S=S+"~>║"+N.getContent()+"║";
-                    S1=i+1==size?S1+"  ╚":S1+" ╠ ";
+                    S1=S1+"  ╚";
                     S2+="  ╔";
                     for (int j=0;j<N.getContent().length();j++){
                         S1+="═";
                         S2+="═";
                     }
-                    S1+=i+1==size?"╝":"╣";
+                    S1+="╝";
                     S2+="╗";
                     N=N.getNext();
                 }
-                if (i == 0) System.out.println(S2);
+                System.out.println(S2);
                 System.out.println(S);
                 System.out.println(S1);
             }
