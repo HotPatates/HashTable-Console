@@ -1,5 +1,5 @@
 # HashTable-Console
-Visualizing Hashtables with the terminal using ascii .
+Visualizing Hashtables with the terminal using ascii .\n
 
 
 How to use :
